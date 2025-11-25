@@ -1,8 +1,8 @@
-import { ColorEnum } from "src/enums/card-color.enum.ts";
-import { ICardTemplate } from "../interfaces/card.interface.ts";
-import { CardTypeEnum } from "src/enums/card-type.enum.ts";
-import { CardAttributesEnum } from "src/enums/card-attributes.enum.ts";
-import { LeaderEnum } from "src/enums/leader.enum.ts";
+import { ColorEnum } from "@enums/card-color.enum.ts";
+import { ICardTemplate } from "@interfaces/card.interface.ts";
+import { CardTypeEnum } from "@enums/card-type.enum.ts";
+import { CardAttributesEnum } from "@enums/card-attributes.enum.ts";
+import { LeaderEnum } from "@enums/leader.enum.ts";
 
 export class CardTemplate implements ICardTemplate {
     id: string;

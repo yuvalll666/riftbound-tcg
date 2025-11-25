@@ -15,10 +15,26 @@ export class Player implements IPlayer {
 
     points: number = 0;
 
+    constructor(
+        public name: string,
+        deck: CardInstance[],
+        runeDeck: CardInstance[],
+        leader: CardInstance,
+        champion: CardInstance
+    ) {
+        this.deck = deck;
+        this.runeDeck = runeDeck;
+        this.leader = leader;
+        this.champion = champion;
+
+        this.hand = [];
+        this.base = [];
+        this.trash = [];
+        this.runes = [];
+    }
+
     // endOfTurnEffects: IScheduledEffect[] = [];
     // startOfOpponentTurnEffects: IScheduledEffect[] = [];
-
-    constructor(public name: string) {}
 
     // addEndOfTurnEffect(effect: IScheduledEffect) {
     //     this.endOfTurnEffects.push(effect);
