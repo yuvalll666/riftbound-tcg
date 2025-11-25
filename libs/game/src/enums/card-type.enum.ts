@@ -1,4 +1,5 @@
 export enum CardTypeEnum {
+    DEFAULT = "DEFAULT",
     LEGEND = "LEGEND",
     RUNE = "RUNE",
     BATTLEFIELD = "BATTLEFIELD",

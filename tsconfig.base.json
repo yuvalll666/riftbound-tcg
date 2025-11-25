@@ -19,5 +19,10 @@
         "customConditions": ["@riftbound-tcg/source"],
         "allowImportingTsExtensions": true,
         "noImplicitAny": false,
+        // "baseUrl": ".",
+        // "paths": {
+        //     "@enums": ["libs/game/src/enums/index.ts"],
+        //     "@enums/*": ["libs/game/src/enums/*"]
+        // }
     }
 }

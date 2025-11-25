@@ -1,16 +1,21 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": "src",
-    "outDir": "dist",
-    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
-    "emitDeclarationOnly": true,
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "forceConsistentCasingInFileNames": true,
-    "types": ["node"]
-  },
-  "include": ["src/**/*.ts"],
-  "references": []
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": "src",
+        "outDir": "dist",
+        "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
+        "emitDeclarationOnly": true,
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "forceConsistentCasingInFileNames": true,
+        "types": ["node"],
+        "paths": {
+            "@enums": ["src/enums/index.ts"],
+            "@enums/*": ["src/enums/*"],
+            "@models/*": ["src/models/*"]
+        }
+    },
+    "include": ["src/**/*.ts"],
+    "references": []
 }

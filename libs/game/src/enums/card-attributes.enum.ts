@@ -1,4 +1,5 @@
 export enum CardAttributesEnum {
+    NONE = "NONE",
     TANK = "TANK",
     SHIELD = "SHIELD",
     VISION = "VISION",
