@@ -1,4 +1,3 @@
-export * from "./card-instance.ts";
-export * from "./card-tamplate.ts";
+export * from "./card.ts";
 export * from "./game.ts";
 export * from "./player.ts";

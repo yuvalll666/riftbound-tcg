@@ -19,10 +19,15 @@
         "customConditions": ["@riftbound-tcg/source"],
         "allowImportingTsExtensions": true,
         "noImplicitAny": false,
-        // "baseUrl": ".",
-        // "paths": {
-        //     "@enums": ["libs/game/src/enums/index.ts"],
-        //     "@enums/*": ["libs/game/src/enums/*"]
-        // }
+        "baseUrl": ".",
+        "paths": {
+            "@riftbound-tcg/game": ["libs/game/src/lib/index.ts"],
+            "@enums": ["libs/game/src/enums/index.ts"],
+            "@enums/*": ["libs/game/src/enums/*"],
+            "@models": ["libs/game/src/models/index.ts"],
+            "@models/*": ["libs/game/src/models/*"],
+            "@interfaces": ["libs/game/src/interfaces/index.ts"],
+            "@interfaces/*": ["libs/game/src/interfaces/*"]
+        }
     }
 }
