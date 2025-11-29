@@ -21,13 +21,16 @@
         "noImplicitAny": false,
         "baseUrl": ".",
         "paths": {
+            // Shared libraries
             "@riftbound-tcg/game": ["libs/game/src/lib/index.ts"],
-            "@enums": ["libs/game/src/enums/index.ts"],
+
+            // Library internals (for library development)
             "@enums/*": ["libs/game/src/enums/*"],
-            "@models": ["libs/game/src/models/index.ts"],
             "@models/*": ["libs/game/src/models/*"],
-            "@interfaces": ["libs/game/src/interfaces/index.ts"],
-            "@interfaces/*": ["libs/game/src/interfaces/*"]
+
+            // App-specific (namespaced to avoid conflicts)
+            "@ui/*": ["apps/ui/src/*"],
+            "@api/*": ["apps/api/src/*"]
         }
     }
 }
